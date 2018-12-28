@@ -6,6 +6,7 @@
         <tr>
           <th>Hotel Name</th>
           <th>Hotel Address</th>
+          <th>Hotel City Id</th>
           <th colspan="2">Action</th>
         </tr>
       </thead>
@@ -13,6 +14,7 @@
         <tr v-for="item of items" :key="item['.key']">
           <td>{{ item.name }}</td>
           <td>{{ item.address }}</td>
+          <td>{{ item.cityId }}</td>
           <td>
             <router-link :to="{ name: 'Edit', params: {id: item['.key']} }" class="btn btn-warning">
               Edit
@@ -33,7 +35,7 @@ import { db } from '../config/db';
 
 export default {
   components: {
-      name: 'ListItem'
+    name: 'ListItem'
   },
   data() {
     return {

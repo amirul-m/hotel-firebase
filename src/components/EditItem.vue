@@ -15,6 +15,10 @@
             <input type="text" class="form-control" v-model="newItem.address" />
           </div>
           <div class="form-group">
+            <label>Hotel City Id:</label>
+            <input type="number" class="form-control" v-model="newItem.cityId" min="1" max="15" />
+          </div>
+          <div class="form-group">
             <input type="submit" class="btn btn-primary" value="Update Item"/>
           </div>
         </form>
@@ -46,7 +50,8 @@ export default {
     let item = this.itemsObj[this.$route.params.id]
     this.newItem = {
       name: item.name,
-      address: item.address
+      address: item.address,
+      cityId: item.cityId
     }
   },
   methods: {

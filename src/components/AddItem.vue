@@ -11,6 +11,10 @@
             <input type="text" class="form-control" v-model="newItem.name"/>
           </div>
           <div class="form-group">
+            <label>Hotel City Id:</label>
+            <input type="number" class="form-control" v-model="newItem.cityId" min="1" max="15" />
+          </div>
+          <div class="form-group">
             <label>Hotel Address:</label>
             <input type="text" class="form-control" v-model="newItem.address"/>
           </div>
@@ -37,7 +41,8 @@ export default {
     return {
       newItem: {
         name: '',
-        address: ''
+        address: '',
+        cityId: ''
       }
     }
   },
@@ -45,10 +50,12 @@ export default {
     addItem() {
       this.$firebaseRefs.items.push({
         name: this.newItem.name,
-        address: this.newItem.address
+        address: this.newItem.address,
+        cityId: this.newItem.cityId
       })
       this.newItem.name = '';
       this.newItem.address = '';
+      this.newItem.cityId = '';
       this.$router.push('/index')
     }
   }
