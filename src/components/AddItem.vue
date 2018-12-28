@@ -8,15 +8,15 @@
         <form v-on:submit.prevent="addItem">
           <div class="form-group">
             <label>Hotel Name:</label>
-            <input type="text" class="form-control" v-model="newItem.name"/>
+            <input type="text" class="form-control" v-model="newItem.name" required />
           </div>
           <div class="form-group">
             <label>Hotel City Id:</label>
-            <input type="number" class="form-control" v-model="newItem.cityId" min="1" max="15" />
+            <input type="number" class="form-control" v-model="newItem.cityId" min="1" max="15" required />
           </div>
           <div class="form-group">
             <label>Hotel Address:</label>
-            <input type="text" class="form-control" v-model="newItem.address"/>
+            <input type="text" class="form-control" v-model="newItem.address" required />
           </div>
           <div class="form-group">
             <input type="submit" class="btn btn-primary" value="Add Hotel"/>

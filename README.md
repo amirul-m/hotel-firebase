@@ -28,6 +28,11 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
+## Package Dependencies
+* firebase
+* vuefire - Firebase bindings for Vue.js
+* vue-router
+* nprogress - Slim progress bars like on YouTube or Medium
 
 ## Note
 ### `Issue 1`

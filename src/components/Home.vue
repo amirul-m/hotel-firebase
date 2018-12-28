@@ -5,7 +5,7 @@
 <script>
 export default {
   components: {
-      name: 'Home'
+    name: 'Home'
   }
 }
 </script>

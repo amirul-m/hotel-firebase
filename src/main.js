@@ -5,6 +5,7 @@ import NProgress from 'nprogress';
 
 import App from './App.vue'
 
+// add components
 import AddItem from './components/AddItem.vue'
 import EditItem from './components/EditItem.vue'
 import ListItem from './components/ListItem.vue'
@@ -43,7 +44,7 @@ const router = new VueRouter({ mode: 'history', routes: routes });
 
 router.beforeResolve((to, from, next) => {
   if (to.name) {
-      NProgress.start()
+    NProgress.start()
   }
   next()
 })

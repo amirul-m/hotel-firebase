@@ -19,7 +19,7 @@
             <input type="number" class="form-control" v-model="newItem.cityId" min="1" max="15" />
           </div>
           <div class="form-group">
-            <input type="submit" class="btn btn-primary" value="Update Item"/>
+            <input type="submit" class="btn btn-primary" value="Update Hotel"/>
           </div>
         </form>
       </div>
