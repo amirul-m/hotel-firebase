@@ -1,4 +1,4 @@
-# hotel-dparagon
+# hotel-firebase
 
 ## Project setup
 ```
@@ -33,19 +33,3 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 * vuefire - Firebase bindings for Vue.js
 * vue-router
 * nprogress - Slim progress bars like on YouTube or Medium
-
-## Note
-### `Issue 1`
-I can't get data from given API. So there isn't fetching data.
-
-### `Issue 2`
-Solved.
-
-### `Issue 3`
-Solved. Altough i show the data in list. Not in another page by id
-
-### `Issue 4`
-Solved.
-
-### `Issue 5`
-Solved.
